@@ -262,7 +262,7 @@ public class CurrentLocation extends AppCompatActivity implements LocationListen
         //Output format
         String output = "json";
         //Create url to request
-        String url = "https://maps.googleapis.com/maps/api/directions/" + output + "?" + param + "&key=" + "AIzaSyBgrOm08Hd9sBr0oF4h0eiSZtfcc3GiBig";
+        String url = "https://maps.googleapis.com/maps/api/directions/" + output + "?" + param + "&key=" + "google_console_key";
         //Toast.makeText(this, url, Toast.LENGTH_SHORT).show();
         Log.d("URL", url);
         return url;

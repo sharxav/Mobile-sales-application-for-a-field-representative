@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.capstone">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Capstone">
+
+        <activity android:name=".Forms.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="Maps.DisplayLog" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBgrOm08Hd9sBr0oF4h0eiSZtfcc3GiBig" />
+
+        <activity android:name="Maps.CurrentLocation" />
+        <activity android:name="Scanner.BarCodeScanner">
+            <meta-data
+                android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+                android:value="barcode" />
+        </activity>
+        <activity android:name=".Forms.ContactList" />
+        <activity android:name=".Forms.AddCustomers" />
+        <activity android:name=".Forms.Reports" />
+        <activity android:name=".Forms.MenuScreen" />
+        <activity android:name="Reports.InventoryReport" />
+        <activity android:name="Reports.OverdueSalesReport" />
+        <activity android:name="Reports.TopCustomers" />
+        <activity android:name="Reports.SalesOrderReport" />
+        <activity android:name=".Forms.SurveyForm" />
+        <activity android:name=".Forms.Inventory" />
+        <activity android:name=".Forms.Sales_Order" />
+        <activity android:name="Reports.ReasonReport" />
+    </application>
+
+</manifest>

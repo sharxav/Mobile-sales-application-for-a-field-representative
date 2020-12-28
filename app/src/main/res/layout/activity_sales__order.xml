@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#E6E6FA"
+    tools:context="com.example.capstone.Forms.Sales_Order">
+
+    <include
+        layout="@layout/appbar_inventory"/>
+
+    <ScrollView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#696969"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:inputType="textPersonName"
+            android:text="Customer"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/customer"
+            android:layout_width="270dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background"/>
+        <Button
+            android:id="@+id/add_button1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:text="Add"
+            android:onClick="Add1"
+            android:backgroundTint="@color/gradStop"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#696969"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:text="Address"/>
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:textColor="#696969"
+                android:text="City"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:textColor="#696969"
+                android:text="State"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textColor="#696969"
+                android:text="ZIP"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/background"/>
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/background"/>
+
+            <EditText
+                android:id="@+id/zip"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/background"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#696969"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:text="Ship To Party"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:id="@+id/ship"
+            android:layout_width="270dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:inputType="number"
+            android:background="@drawable/background"/>
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:text="Add"
+                android:onClick="Add"
+                android:backgroundTint="@color/gradStop"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#696969"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:text="Address"/>
+        <EditText
+            android:id="@+id/address1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:textColor="#696969"
+                android:text="City"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:textColor="#696969"
+                android:text="State"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:textColor="#696969"
+                android:text="ZIP"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/city1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/background"/>
+            <EditText
+                android:id="@+id/state1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/background"/>
+
+            <EditText
+                android:id="@+id/zip1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/background"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:textColor="#696969"
+            android:text="Required Date"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#696969"
+            android:textSize="20dp"
+            android:text="Type"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="160dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background"/>
+
+        <Spinner
+            android:id="@+id/type"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:editable="false"
+            android:focusable="false"
+            android:background="@drawable/background" />
+
+    </LinearLayout>
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="30dp"
+            android:stretchColumns="*"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/tableLayout">
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="#696969"
+            android:padding="2dp"
+            android:id="@+id/tableRow"
+            android:background="#cccccc">
+            <TextView
+                android:text="S.No"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_column="0" />
+            <TextView
+                android:text="Item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_column="1" />
+            <TextView
+                android:text="Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_column="2" />
+            <TextView
+                android:text="Qty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_column="3" />
+            <TextView
+                android:text="Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_column="4" />
+        </TableRow>
+        </TableLayout>
+</HorizontalScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="90dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_baseline_add_24"
+            android:onClick="Scan"
+            app:backgroundTint="#0288D1" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="40dp"
+            android:onClick="delete"
+            android:src="@drawable/ic_baseline_delete_24"
+            app:backgroundTint="#0288D1" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

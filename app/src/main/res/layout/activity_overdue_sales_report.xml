@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6FA"
+    tools:context="Reports.OverdueSalesReport">
+
+    <include
+        layout="@layout/appbar_inventory"/>
+
+    <Spinner
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="100dp"
+        android:background="#f8f8ff"
+        android:layout_height="wrap_content"
+        android:id="@+id/bar_spinner"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:layout_marginTop="120dp"
+        android:id="@+id/barChart"
+        android:layout_width="match_parent"
+        android:background="#f8f8ff"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

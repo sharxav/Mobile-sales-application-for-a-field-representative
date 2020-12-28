@@ -1,0 +1,46 @@
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:gravity="center_horizontal"
+    android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:id="@+id/editText1"
+            android:layout_column="0" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:id="@+id/editText2"
+            android:gravity="center"
+            android:layout_column="1" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:id="@+id/editText3"
+            android:gravity="center"
+            android:layout_column="2" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText4"
+            android:textSize="16dp"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_column="3" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:id="@+id/editText5"
+            android:gravity="center"
+            android:layout_column="4" />
+
+</TableRow>

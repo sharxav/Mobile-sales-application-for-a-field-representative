@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="26dp"
+    android:background="@drawable/grad_bg"
+    android:orientation="vertical"
+    tools:context=".Forms.LoginActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Login"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter username"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="16dp"
+        android:imeOptions="actionNext"
+        android:gravity="left"
+        android:textSize="22sp"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter password"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="left"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:textSize="22sp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="128dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/gradStart"
+        android:text="Log In"/>
+</LinearLayout>

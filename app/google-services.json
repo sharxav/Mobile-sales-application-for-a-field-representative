@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1095930804940",
+    "firebase_url": "https://newdemo-5493c.firebaseio.com",
+    "project_id": "newdemo-5493c",
+    "storage_bucket": "newdemo-5493c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095930804940:android:e96e954ecd1bdd4f58e069",
+        "android_client_info": {
+          "package_name": "com.example.capstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095930804940-8qvqkdftjo0s206aaddaqhp3f2i2pkad.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJJmB_AXwdv4p3q5pVcXtyIQ7hotL51SM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095930804940-8qvqkdftjo0s206aaddaqhp3f2i2pkad.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

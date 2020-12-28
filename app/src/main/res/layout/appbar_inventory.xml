@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+    android:background="@color/design_default_color_primary"
+    android:id="@+id/MyToolbar4"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:onClick="back_to_menu"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inventory"
+        android:id="@+id/tooltext"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"/>
+
+
+
+
+</androidx.appcompat.widget.Toolbar>

@@ -26,7 +26,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBgrOm08Hd9sBr0oF4h0eiSZtfcc3GiBig" />
+            android:value="private_key" />
 
         <activity android:name="Maps.CurrentLocation" />
         <activity android:name="Scanner.BarCodeScanner">
